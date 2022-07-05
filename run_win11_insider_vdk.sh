@@ -1,9 +1,9 @@
 qemu-system-arm ¥
 -cpu arm11mpcore ¥
 -M realview-eb-mpcore,usb=on ¥
--m 2G ¥
+-m 1G ¥
 -smp 2 ¥
--drive if=none,id=usbstick,file=W11ARM.qcow2,format=raw ¥
+-drive if=none,id=usbstick,file=W11ARM.qcow2 ¥
 -device usb-ehci,id=ehci ¥
 -usbdevice mouse ¥
 -device usb-storage,bus=ehci.0,drive=usbstick ¥
